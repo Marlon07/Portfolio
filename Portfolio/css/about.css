@@ -1,0 +1,46 @@
+@import url(../css/style.css);
+
+/* Barra del menú */
+.navbar {
+  position: relative; /* importante para centrar */
+  display: flex;
+  height: 80px;
+  align-items: center;
+  background-color: #e5e5e5; /* gris */
+  padding: 10px 20px;
+  border-radius: 20px;
+  margin: 20px;
+}
+
+/* Logo alineado a la izquierda */
+.navbar img {
+  height: 45px;
+  width: auto;
+  border-radius:20px;
+}
+
+/* Menú centrado */
+.menu {
+  position: absolute; /* lo sacamos del flujo para poder centrar */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+}
+
+/* Links */
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1rem;
+  font-family: 'DMMono-medium';
+  transition: color 0.3s ease;
+}
+
+.menu a:hover {
+  color: var(--tertiary-color);
+}
