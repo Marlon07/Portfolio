@@ -1,0 +1,32 @@
+/* @import url(style.css); */
+
+@media (max-width: 768px) {
+    .parent {
+        height: 500px;
+    }
+
+    #title1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 1.7rem;
+        width: 80%;
+        top: 38%;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    .contenedor {
+        flex-direction: column;
+    }
+
+    .grid-left,
+    .grid-right {
+        grid-template-columns: 1fr;
+        /* solo 1 columna */
+    }
+}
