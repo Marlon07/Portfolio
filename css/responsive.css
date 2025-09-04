@@ -124,20 +124,21 @@
 
 @media (min-width: 768px) {
 
-    .img-mano{
+    .img-mano {
         display: block;
-        height: 70px;
+        height: 50px;
     }
-    #title1{
+
+    #title1 {
         font-size: 1.1rem;
         padding: 0px;
     }
 
-    .subtitle{
+    .subtitle {
         font-size: 2.7rem;
     }
 
-    h2{
+    h2 {
         font-size: 2.7rem;
         margin-bottom: 40px;
     }
@@ -164,7 +165,36 @@
         }
     }
 
-    /* .grid-left,
+    .grid-right .col-img,
+    .grid-left .col-img {
+        /* grid-row: none; */
+        height: 300px;
+    }
+
+    footer h2 {
+        font-size: 2.7rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .parent {
+        height: 600px;
+    }
+
+    #title1 {
+        font-size: 1.3rem;
+    }
+
+    .subtitle {
+        font-size: 3.7rem;
+        top: 43%;
+    }
+
+    h2 {
+        font-size: 3.7rem;
+    }
+
+    .grid-left,
     .grid-right {
         gap: 20px;
         padding: 0;
@@ -176,36 +206,85 @@
 
     .grid-right {
         grid-template-columns: 43% 55%;
-    } */
+    }
+
+    .grid-right .col-text,
+    .grid-left .col-text {
+        padding: 20px 20px;
+    }
 
     .grid-right .col-img,
     .grid-left .col-img {
-        /* grid-row: none; */
-        height: 300px;
+        grid-row: none;
+        height: 100%;
     }
 
-    footer h2{
-        font-size: 2.7rem;
+    footer {
+        height: 430px;
+    }
+
+    footer h2 {
+        font-size: 3.7rem;
     }
 }
 
-/* Medianos (tablets en horizontal, pantallas chicas) */
-@media (max-width: 1024px) {
-    /* tablets horizontal y laptops pequeños */
-}
+@media (min-width: 1280px) {
+    .parent{
+        height: 680px;
+    }
 
-/* Grandes (laptops y monitores comunes) */
-@media (max-width: 1280px) {
-    /* laptops estándar */
+    .subtitle {
+        font-size: 4.7rem;
+        top: 47%;
+    }
+
+    h2 {
+        font-size: 4.7rem;
+        margin-top: 90px;
+    }
+
+    .slider .slide-track {
+        width: calc(450px * 10);
+    }
+
+    .slider .slide-track-reverse {
+        width: calc(450px * 10);
+    }
+
+    .slider .slide {
+        width: 450px;
+    }
+
+    @keyframes slider {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-450px * 5));
+        }
+    }
+
+    .grid-right .col-text, .grid-left .col-text {
+        padding: 0px 40px;
+        height: 247px;
+    }
+
+    footer {
+        height: 470px;
+    }
+
+    footer h2 {
+        font-size: 4.7rem;
+    }
 }
 
 /* Extra grandes (pantallas grandes) */
 @media (min-width: 1536px) {
-
-    /* monitores grandes */
-    * {
-        font-size: 16px;
+    .parent{
+        height: calc(100vh - 40px);
     }
+
 }
 
 /* @media (max-width: 768px) {
