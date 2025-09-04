@@ -173,7 +173,7 @@
     }
     .subtitle{
         font-size: 5rem;
-        top: 47%;
+        top: 50%;
     }
     h2{
         font-size: 5rem;
@@ -210,7 +210,7 @@
 
     .grid-right .col-text, .grid-left .col-text {
         padding: 0px 60px;
-        height: 400px;
+        height: 369px;
     }
 
     h3{
