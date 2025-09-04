@@ -1,6 +1,123 @@
 /* @import url(style.css); */
 
+/* Extra pequeños (teléfonos en vertical) */
+@media (max-width: 480px) {
+
+    /* Inicio Header */
+    .parent {
+        height: 500px;
+    }
+    .img-mano{
+        height: 50px;
+    }
+    #title1 {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .subtitle {
+        font-size: 1.7rem;
+        width: 80%;
+        top: 38%;
+    }
+    /* Fin Header */
+
+    h2 {
+        font-size: 1.7rem;
+        margin-top: 80px;
+    }
+
+    .description {
+        padding: 0px 20px;
+        margin-bottom: 50px;
+    }
+
+    /* Inicio Sección Proyectos */
+    .slider .slide-track {
+        width: calc(250px * 10);
+    }
+
+    .slider .slide-track-reverse {
+        width: calc(250px * 10);
+    }
+
+    .slider .slide {
+        width: 250px;
+    }
+
+    @keyframes slider {
+        0% {
+            transform: translateX(0);
+        }
+
+        100% {
+            transform: translateX(calc(-250px * 5));
+        }
+    }
+    /* Fin Sección Proyectos */
+
+    .grid-left,
+    .grid-right {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        padding: 10px 20px;
+        gap: 0px;
+    }
+
+    .grid-right .col-text,
+    .grid-left .col-text {
+        padding: 30px 20px;
+        height: auto;
+        grid-row: 2;
+    }
+
+    .grid-right .col-img,
+    .grid-left .col-img {
+        grid-row: 1;
+        height: 190px;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        line-height: 1.7rem;
+    }
+    footer{
+        height: 450px;
+        margin-top: 100px;
+        padding-top: 80px;
+    }
+    footer h2 {
+        font-size: 1.7rem;
+    }
+    footer p{
+        text-align: center;
+    }
+}
+
+
+
+/* Pequeños (teléfonos grandes) */
 @media (max-width: 768px) {
+    /* móviles grandes y tablets en vertical */
+}
+
+/* Medianos (tablets en horizontal, pantallas chicas) */
+@media (max-width: 1024px) {
+    /* tablets horizontal y laptops pequeños */
+}
+
+/* Grandes (laptops y monitores comunes) */
+@media (max-width: 1280px) {
+    /* laptops estándar */
+}
+
+/* Extra grandes (pantallas grandes) */
+@media (max-width: 1536px) {
+    /* monitores grandes */
+}
+
+/* @media (max-width: 768px) {
     .parent {
         height: 500px;
     }
@@ -27,6 +144,5 @@
     .grid-left,
     .grid-right {
         grid-template-columns: 1fr;
-        /* solo 1 columna */
     }
-}
+} */
