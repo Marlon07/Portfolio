@@ -1,6 +1,56 @@
-@import url(../css/style.css);
+/* @import url(../css/style.css); */
 
-a{
+nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  margin: 20px;
+  padding: 0 20px;
+  border-radius: 20px;
+  height: 80px;
+}
+
+h2{
+  /* margin-top: 60px !important; */
+}
+
+.container{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.container img{
+  width: 100%;
+  border-radius: 20px;
+  /* height: 40px; */
+}
+
+@media (min-width: 1024px) {
+  .container{
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+  }
+  .container img{
+    height: auto;
+  }
+  .column1{
+    flex: 1;
+  }
+  .column2{
+    flex: 1;
+  }
+}
+
+@media (min-width: 1536px) {
+  .container{
+    margin-top: 90px;
+  }
+}
+
+/* a{
   text-decoration: none;
   color: white;
 }
@@ -73,7 +123,7 @@ nav > div{
   height: 100vh;
   display: flex;
   background: #141412;
-  /* clip-path: polygon(0 0, 100% 0, 100% 0, 0 0); */
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   will-change: transform;
 }
 
@@ -93,7 +143,7 @@ nav > div{
 .menu-item{
   display: flex;
   cursor: pointer;
-  /* clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%); */
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
 .menu-item p{
@@ -118,7 +168,7 @@ nav > div{
   background: var(--primary-color);
   width: 0%;
   height: 12px;
-}
+} */
 
 /* @media(max-width: 768px){
   .menu-item p{

@@ -4,11 +4,46 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="../css/about.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+    <link rel="icon" type="favicon/x-icon" href="../img/favicon.png" />
     <title>Acerca de</title>
   </head>
   <body>
+    <header>
+      <nav>
+        <img class="logo" src="../img/Logo-bn.png" alt="logo-marlon" />
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="projects.html">Proyectos</a></li>
+          <li><a href="about.html" id="active">Acerca de</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <nav>
+    <div class="content">
+      <h2>Acerca de mi</h2>
+      <div class="container">
+        <div class="column1">
+            <img src="../img/me.png" />
+        </div>
+        <div class="column2">
+            <p>
+              Hola, mi nombre es Marlon Aguilera, técnico profesional en desarrollo
+              de software y estudiante en ingeniería de software y datos, soy un
+              desarrollador web con experiencia en la creación de sitios web
+              atractivos y funcionales. Me especializo en HTML, CSS y JavaScript, he
+              trabajado con CMS como Wordpress cuando el cliente lo ha solicitado
+              para facilitar su administración. Me apasiona el diseño web y siempre
+              busco nuevas formas de mejorar mis habilidades y conocimientos en el
+              campo del desarrollo web. Estoy emocionado de seguir creciendo como
+              desarrollador y contribuir a proyectos innovadores en el futuro.
+            </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- <nav>
       <div class="toggle-btn">
         <button class="burger" onclick="this.classList.toggle('active');"></button>
       </div>
@@ -26,6 +61,16 @@
           <p><a href="#">Acerca de</a></p>
         </div>
       </div>
+    </div> -->
+
+    <div class="bg-footer" id="section-contact">
+      <footer>
+        <h2>Contacto</h2>
+        <a class="mail" href="mailto:marlonaguilera.dev@gmail.com"
+          >marlonaguilera.dev@gmail.com</a
+        >
+        <p>&copy; 2025 Marlon Aguilera. Todos los derechos reservados.</p>
+      </footer>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
