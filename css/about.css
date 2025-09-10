@@ -1,6 +1,6 @@
 /* @import url(../css/style.css); */
 
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -11,41 +11,43 @@ nav{
   height: 80px;
 }
 
-h2{
-  /* margin-top: 60px !important; */
+.content h2 {
+  margin-top: 60px;
 }
 
-.container{
+.container {
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 
-.container img{
+.container img {
   width: 100%;
   border-radius: 20px;
-  /* height: 40px; */
 }
 
 @media (min-width: 1024px) {
-  .container{
+  .content h2 {
+    margin-top: 80px;
+  }
+  .container {
     flex-direction: row;
     align-items: center;
     gap: 50px;
   }
-  .container img{
+  .container img {
     height: auto;
   }
-  .column1{
+  .column1 {
     flex: 1;
   }
-  .column2{
+  .column2 {
     flex: 1;
   }
 }
 
 @media (min-width: 1536px) {
-  .container{
+  .container {
     margin-top: 90px;
   }
 }
